@@ -10,7 +10,7 @@ module PostmarkMailer
     end
 
     specify :deliver_later do
-      expect(subject.deliver_later).to be_nil
+      expect(subject.deliver_later).not_to be_nil
     end
   end
 end
